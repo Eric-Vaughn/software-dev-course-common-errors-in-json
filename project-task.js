@@ -44,6 +44,35 @@ but it contains multiple syntax errors that prevent it from being parsed.
 // 🔍 Provided JSON File with Errors
 // ============================================
 
+// const invalidBookingJSON = `
+// {
+//   "hotelName": "Grand City Hotel",
+//   "checkInDate": "2024-05-15"
+//   "checkOutDate": "2024-05-20",
+//   "guests": [
+//     {
+//       name: "Alice Johnson",
+//       "age": 30,
+//       "email": "alice.johnson@example.com"
+//     },
+//     {
+//       "name": "Bob Smith",
+//       "age": undefined,
+//       "email": "bob.smith@example"
+//     }
+//   ],
+//   "roomDetails": {
+//     "type": "Suite",
+//     "pricePerNight": 200,
+//     "amenities": ["WiFi", "Breakfast", "Parking",]
+//   }
+// }
+// `;
+
+// ============================================
+// 🔍 FIXED JSON File without Errors
+// ============================================
+
 const invalidBookingJSON = `
 {
   "hotelName": "Grand City Hotel",
@@ -69,6 +98,13 @@ const invalidBookingJSON = `
 }
 `;
 
+// 🔧 Your Task:
+// ✅1️⃣ Review the provided JSON file
+// ✅2️⃣ Identify all syntax errors
+//          
+// ✅3️⃣ Write down what each error is and why it causes a problem
+// ✅4️⃣ Correct the JSON structure so that it is valid
+// ✅5️⃣ Validate your corrected version using a JSON linter or validator
 
 // ============================================
 // ✅ Requirements
